@@ -6,7 +6,16 @@ namespace DesignPatterns.Singleton
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SomeClass someClass = new SomeClass();
+            SomeErrorClass errorClass = new SomeErrorClass();
+
+            Random random = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                int randomNumber = random.Next();
+
+                EventLog.GetInstance().AddEvent($"[{DateTime.Now}] Wylosowana liczba: {randomNumber}");
+            }
         }
     }
 }
