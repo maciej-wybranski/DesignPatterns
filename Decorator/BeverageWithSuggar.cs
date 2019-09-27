@@ -3,7 +3,7 @@
     /// <summary>
     /// Concrete decorator
     /// </summary>
-    class BeverageWithSuggar : BeverageWithAnAddition
+    public class BeverageWithSuggar : BeverageWithAnAddition
     {
         private readonly bool _brownSuggar;
 

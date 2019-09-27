@@ -3,7 +3,7 @@
     /// <summary>
     /// Concrete decorator
     /// </summary>
-    class BeverageWithMilk : BeverageWithAnAddition
+    public class BeverageWithMilk : BeverageWithAnAddition
     {
         public BeverageWithMilk(Beverage beverage)
             : base(beverage)

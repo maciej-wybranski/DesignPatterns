@@ -3,7 +3,7 @@
     /// <summary>
     /// Decorator
     /// </summary>
-    abstract class BeverageWithAnAddition : Beverage
+    public abstract class BeverageWithAnAddition : Beverage
     {
         protected Beverage beverage;
 

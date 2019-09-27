@@ -3,7 +3,7 @@
     /// <summary>
     /// Concrete component
     /// </summary>
-    class Tea : Beverage
+    public class Tea : Beverage
     {
         public override decimal Price()
         {

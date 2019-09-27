@@ -3,7 +3,7 @@
     /// <summary>
     /// Component
     /// </summary>
-    abstract class Beverage
+    public abstract class Beverage
     {
         public abstract decimal Price();
         
