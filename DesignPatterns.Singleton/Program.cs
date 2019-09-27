@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DesignPatterns.Singleton
+namespace DesignPattern.Singleton
 {
     class Program
     {

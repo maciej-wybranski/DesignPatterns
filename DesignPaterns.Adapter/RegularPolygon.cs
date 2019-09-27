@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace DesignPaterns.Adapter
+namespace DesignPattern.Adapter
 {
     abstract class RegularPolygon : IRegularPolygon
     {

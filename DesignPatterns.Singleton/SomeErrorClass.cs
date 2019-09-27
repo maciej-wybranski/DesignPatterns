@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace DesignPatterns.Singleton
+namespace DesignPattern.Singleton
 {
     class SomeErrorClass
     {

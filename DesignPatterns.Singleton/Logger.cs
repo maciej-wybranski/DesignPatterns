@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
-namespace DesignPatterns.Singleton
+namespace DesignPattern.Singleton
 {
     static class Logger
     {

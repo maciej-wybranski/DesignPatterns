@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace DesignPaterns.Adapter
+namespace DesignPattern.Adapter
 {
     /// <summary>
     /// Example of a class compatible with the target
