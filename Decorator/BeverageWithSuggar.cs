@@ -1,5 +1,8 @@
 ﻿namespace DesignPattern.Decorator
 {
+    /// <summary>
+    /// Concrete decorator
+    /// </summary>
     class BeverageWithSuggar : BeverageWithAnAddition
     {
         private readonly bool _brownSuggar;

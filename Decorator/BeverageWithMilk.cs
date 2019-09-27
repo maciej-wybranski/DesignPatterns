@@ -1,5 +1,8 @@
 ﻿namespace DesignPattern.Decorator
 {
+    /// <summary>
+    /// Concrete decorator
+    /// </summary>
     class BeverageWithMilk : BeverageWithAnAddition
     {
         public BeverageWithMilk(Beverage beverage)
