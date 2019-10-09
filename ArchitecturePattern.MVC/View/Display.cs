@@ -4,17 +4,8 @@ using System.Text;
 
 namespace ArchitecturePattern.MVC.View
 {
-    using Model;
-
     public class Display
     {
-        private Adder _adder;
-
-        public Display(Adder adder)
-        {
-            _adder = adder;
-        }
-
         private static void DisplayString(string content, bool endOfLine = true)
         {
             if(endOfLine)
@@ -33,9 +24,9 @@ namespace ArchitecturePattern.MVC.View
             DisplayString("Set price: ", false);
         }
 
-        public void DisplaySum()
+        public void DisplaySum(decimal sum, decimal limit)
         {
-            DisplayString($"Sum: {_adder.Sum}/{_adder.Limit}");
+            DisplayString($"Sum: {sum}/{limit}");
         }
 
         public void DisplayBye()

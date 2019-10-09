@@ -6,6 +6,9 @@ namespace ArchitecturePattern.MVC.Model
 {
     public class Adder
     {
+        public delegate void SumChangedEventHandler(decimal sum, decimal limit);
+        public event SumChangedEventHandler SumChanged;
+
         public decimal Sum { get; private set; }
         public decimal Limit { get; private set; }
 
@@ -13,6 +16,7 @@ namespace ArchitecturePattern.MVC.Model
         {
             Sum = sum;
             Limit = limit;
+            SumChanged?.Invoke(Sum, Limit);
         }
 
         private bool CheckIfThePriceIsCorrect(decimal price)
@@ -27,6 +31,8 @@ namespace ArchitecturePattern.MVC.Model
             if (!CheckIfThePriceIsCorrect(price))
                 throw new ArgumentOutOfRangeException(nameof(price), "Value is too hight or negative");
             Sum += price;
+            SumChanged?.Invoke(Sum, Limit);
         }
+
     }
 }

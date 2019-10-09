@@ -15,7 +15,8 @@ namespace ArchitecturePattern.MVC.Controller
         public AdderController(decimal limit)
         {
             _adder = new Adder(limit, 0);
-            _display = new Display(_adder);
+            _display = new Display();
+            _adder.SumChanged += _display.DisplaySum;
         }
 
         public void Run()
@@ -24,7 +25,6 @@ namespace ArchitecturePattern.MVC.Controller
             bool exit = false;
             do
             {
-                _display.DisplaySum();
                 _display.DisplayCommand();
                 string priceString = Console.ReadLine();
 
