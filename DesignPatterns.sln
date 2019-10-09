@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Bridge", "Des
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Proxy", "DesignPattern.Proxy\DesignPattern.Proxy.csproj", "{D1024AB3-C9C6-46B7-A269-3C6F0660654B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArchitecturePatterns", "ArchitecturePatterns", "{D1A4338F-642A-4C5B-B00A-272992312362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturePattern.MVC", "ArchitecturePattern.MVC\ArchitecturePattern.MVC.csproj", "{31A47E07-1D72-499D-897E-DA4D4D63719F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,9 +49,16 @@ Global
 		{D1024AB3-C9C6-46B7-A269-3C6F0660654B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1024AB3-C9C6-46B7-A269-3C6F0660654B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1024AB3-C9C6-46B7-A269-3C6F0660654B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31A47E07-1D72-499D-897E-DA4D4D63719F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A47E07-1D72-499D-897E-DA4D4D63719F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A47E07-1D72-499D-897E-DA4D4D63719F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A47E07-1D72-499D-897E-DA4D4D63719F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31A47E07-1D72-499D-897E-DA4D4D63719F} = {D1A4338F-642A-4C5B-B00A-272992312362}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {781B83D8-E884-4417-A560-D66A67203B19}
